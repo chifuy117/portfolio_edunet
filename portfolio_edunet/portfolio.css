@@ -1,0 +1,210 @@
+/* General Styling with Custom Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Section Padding */
+.section {
+    padding: 60px 0;
+}
+
+/* Portfolio Grid Layout */
+#portfolio .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Carousel Control Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer .fab {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+footer .fab:hover {
+    color: #0056b3;
+}
+
+/* Form Success Message */
+#form-message {
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #portfolio .row {
+        grid-template-columns: 1fr;
+    }
+
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Testimonials Styling */
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+}
+
+/* Responsive Testimonials */
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Contact Section Styling */
+#contact iframe {
+    width: 100%;
+    height: 300px;
+}
+
+#contact i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.map-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Theme Enhancement: Section Background */
+.section {
+    background-color: #f8f9fa; /* Light gray for a clean look */
+    padding: 60px 0; /* Override existing padding if needed */
+}
+
+/* Optional: Back-to-Top Button Styling */
+#back-to-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    line-height: 40px;
+}
+
+#back-to-top i {
+    font-size: 20px;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #555;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+h5 {
+    font-size: 1.25rem;
+    color: #777;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #888;
+}
